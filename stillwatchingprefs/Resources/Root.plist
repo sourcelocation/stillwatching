@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>condensed</key>
+			<true/>
+			<key>headerCellClass</key>
+			<string>HBPackageNameHeaderCell</string>
+			<key>icon</key>
+			<string>icon.png</string>
+			<key>packageIdentifier</key>
+			<string>ovh.exerhythm.stillwatching</string>
+
+			<key>packageNameOverride</key>
+			<string>StillWatching?</string>
+			<!-- <key>showVersion</key>
+			<false/> -->
+			<key>backgroundGradientColors</key>
+			<array>
+					<string>#2E52C1</string>
+					<string>#1C226C</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>General</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>ovh.exerhythm.stillwatchingPreferences/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true />
+			<key>defaults</key>
+			<string>ovh.exerhythm.stillwatchingPreferences</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>After stopping playback:</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>ovh.exerhythm.stillwatchingPreferences/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true />
+			<key>defaults</key>
+			<string>ovh.exerhythm.stillwatchingPreferences</string>
+			<key>key</key>
+			<string>turnOffScreen</string>
+			<key>label</key>
+			<string>Lock screen</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>ovh.exerhythm.stillwatchingPreferences/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false />
+			<key>defaults</key>
+			<string>ovh.exerhythm.stillwatchingPreferences</string>
+			<key>key</key>
+			<string>turnOffBluetooth</string>
+			<key>label</key>
+			<string>Turn off Bluetooth</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>If you sleep with AirPods with this option enabled, you will most likely hear a "connection" sound, because they try to auto-connect to another device.</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Time</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>ovh.exerhythm.stillwatchingPreferences/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>cellClass</key>
+			<string>XXXTimeIntervalPickerCell</string>
+			<key>defaults</key>
+			<string>ovh.exerhythm.stillwatchingPreferences</string>
+			<key>default</key>
+			<integer>1320</integer>
+			<key>key</key>
+			<string>activeAfter</string>
+			<key>label</key>
+			<string>Active after:</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>label</key>
+			<string>Interval (minutes):</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>ovh.exerhythm.stillwatchingPreferences/ReloadPrefs</string>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>default</key>
+			<integer>10</integer>
+			<key>defaults</key>
+			<string>ovh.exerhythm.stillwatchingPreferences</string>
+			<key>key</key>
+			<string>interval</string>
+			<key>min</key>
+			<real>10</real>
+			<key>max</key>
+			<real>60</real>
+			<key>isSegmented</key>
+			<true/>
+			<key>segmentCount</key>
+			<integer>10</integer>
+			<key>showValue</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Credits</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBTwitterCell</string>
+			<key>label</key>
+			<string>Developer</string>
+			<key>user</key>
+			<string>sourceloc</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+			<string>HBLinkTableCell</string>
+			<key>label</key>
+			<string>Preference Cells</string>
+			<key>subtitle</key>
+			<string>Thanks to Lacertosus for amazing list cells!</string>
+			<key>url</key>
+			<string>https://github.com/LacertosusRepo/Preference-Cell-Examples</string>
+			<key>initials</key>
+			<string>LR</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>And thanks to all the great people on Theos Discord (especially luki120, Lacertosus, Lightmann)! This project wouldn't be possible without them.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>StillWatching?</string>
+</dict>
+</plist>

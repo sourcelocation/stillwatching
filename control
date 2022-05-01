@@ -1,0 +1,9 @@
+Package: ovh.exerhythm.stillwatching
+Name: StillWatching?
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Asks you if you have fallen asleep.
+Maintainer: sourcelocation
+Author: sourcelocation
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.17)
