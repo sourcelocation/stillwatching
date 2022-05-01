@@ -1,9 +1,7 @@
 #import <Cephei/HBPreferences.h>
 #import <UIKit/UIKit.h>
-#import <MediaRemote.h>
-#import <Foundation/Foundation.h>
+#import <MediaRemote/MediaRemote.h>
 #import "HBLog.h"
-// #import <Celestial/AVSystemController.h>
 
 @interface AVSystemController : NSObject {}
 + (id)sharedAVSystemController ;
@@ -144,7 +142,7 @@ static void disableBluetooth() {
 	
 	%new
 	-(void)stopPlayback {
-		MRMediaRemoteSendCommand(kMRPause, nil);
+		MRMediaRemoteSendCommand(MRMediaRemoteCommandPause, nil);
 		[self dismissAlert ];
 		if (turnOffScreen) {
 			[(SpringBoard *)[%c(SpringBoard) sharedApplication] _simulateLockButtonPress];
